@@ -1,0 +1,5 @@
+---
+- name: Install Bartender via Homebrew Cask
+  homebrew_cask:
+    name: bartender
+  when: ansible_os_family == "Darwin"
